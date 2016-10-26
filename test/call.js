@@ -19,6 +19,9 @@ test(function () {
         if (err)return;
         if (res == null)return;
         console.log(res);
+        for (var i in res) {
+            redisClient.del(res[i]);
+        }
     });
 });
 
