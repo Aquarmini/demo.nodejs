@@ -1,0 +1,25 @@
+{
+  "name": "demo.nodejs",
+  "version": "0.0.0",
+  "description": "a demo for nodejs",
+  "main": "config",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/limingxinleo/demo.nodejs.git"
+  },
+  "author": "limx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/limingxinleo/demo.nodejs/issues"
+  },
+  "homepage": "https://github.com/limingxinleo/demo.nodejs",
+  "dependencies": {
+    "redis": "^2.6.2"
+  }
+}
