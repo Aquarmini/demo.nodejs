@@ -15,15 +15,19 @@ function getTest() {
 
 async.series([
     function (callback) {
-        callback(null, addTest());
+        addTest();
+        callback(null, 1);
     },
     function (callback) {
         setTimeout(function () {
-            callback(null, getTest());
+            getTest();
+            //callback(null, 2);
         }, 1000);
     },
     function (callback) {
-        callback(null, addTest());
+        addTest();
+        getTest();
+        callback(null, 3);
     }]
 );
 
