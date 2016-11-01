@@ -21,6 +21,7 @@
   "homepage": "https://github.com/limingxinleo/demo.nodejs",
   "dependencies": {
     "redis": "^2.6.2",
-    "async": "^2.1.2"
+    "async": "^2.1.2",
+    "commander": "^2.9.0"
   }
 }
