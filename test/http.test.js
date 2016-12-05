@@ -7,6 +7,7 @@ var server = http.createServer(function (req, res) {
     res.writeHead(200, {
         'Content-type': 'text/html'
     });
+    res.write('Hello world');
     res.end();
 }).listen(10086, function () {
     console.log('开启服务端口 10086');
