@@ -1,7 +1,6 @@
 /**
  * Created by limx on 2016/10/26.
  */
-var config = require('../config.js');
 var async = require('async');
 var test = 0;
 
