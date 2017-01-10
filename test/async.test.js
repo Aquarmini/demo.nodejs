@@ -2,36 +2,41 @@
  * Created by limx on 2016/10/26.
  */
 var async = require('async');
-var test = 0;
-
-function addTest() {
-    test++;
-}
-
-function getTest() {
-    console.log(test);
-}
 
 async.series([
     function (callback) {
-        addTest();
-        callback(null, 1);
-    },
-    function (callback) {
         setTimeout(function () {
-            getTest();
-            //callback(null, 2);
+            console.log(1);
+            callback(null, 1);
         }, 1000);
     },
     function (callback) {
-        addTest();
-        getTest();
-        callback(null, 3);
+        setTimeout(function () {
+            console.log(2);
+            callback(null, 1);
+        }, 500);
+    },
+    function (callback) {
+        setTimeout(function () {
+            console.log(3);
+            callback(null, 1);
+        }, 100);
+    },
+    function (callback) {
+        setTimeout(function () {
+            console.log(1);
+        }, 1000);
+        setTimeout(function () {
+            console.log(2);
+        }, 500);
+        setTimeout(function () {
+            console.log(3);
+        }, 100);
+    },
+    function (err, res) {
+        if (err) {
+            console.log(res);
+        }
     }]
-);
-
-//addTest();
-//setTimeout(function () {
-//    getTest();
-//}, 1000);
-//addTest();
+)
+;
