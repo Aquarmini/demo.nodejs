@@ -14,5 +14,4 @@ if ("undefined" == typeof a) {
 if ("undefined" == typeof obj.d) {
     console.log("typeof obj.d is undefined");
 }
-
 console.log(typeof null);
