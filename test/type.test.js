@@ -4,6 +4,7 @@
 var obj = {
     num: 1
 };
+console.log(typeof obj.num);
 console.log(obj.d);
 console.log(typeof obj.d);
 // console.log(a); //error
